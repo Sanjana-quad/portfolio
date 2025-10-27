@@ -18,7 +18,6 @@ export default function App() {
       <div className="min-h-screen flex flex-col bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
         <Navbar />
         <main className="flex-1 container mx-auto px-4 py-8">
-            <p className="text-lg font-bold text-red-500">App loaded ✅</p>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

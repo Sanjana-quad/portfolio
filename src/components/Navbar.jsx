@@ -1,7 +1,15 @@
 import { NavLink } from "react-router-dom";
-import { FiGithub, FiMail } from "react-icons/fi";
+import { FiGithub, FiMail, FiSun, FiMoon} from "react-icons/fi";
+import useTheme from "../hooks/useTheme";
+
 
 export default function Navbar() {
+    const [theme, setTheme] = useTheme();
+
+  const toggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+
   const linkClass = ({ isActive }) =>
     "px-3 py-2 rounded-md text-sm font-medium " +
     (isActive ? "bg-gray-200 dark:bg-gray-700" : "hover:bg-gray-100 dark:hover:bg-gray-800");
@@ -22,6 +30,9 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-3">
+            <button onClick={toggleTheme} className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700" title={theme === "dark" ? "Switch to dark mode" : "Switch to light mode"} >
+            {theme === "dark" ? <FiMoon size={18} /> : <FiSun size={18} />}
+          </button>
           <a href="https://github.com/Sanjana-quad" target="_blank" rel="noreferrer" className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700">
             <FiGithub size={18} />
           </a>
