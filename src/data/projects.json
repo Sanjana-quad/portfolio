@@ -1,0 +1,26 @@
+[
+  {
+    "id": "merchant-api",
+    "title": "Merchant Payment Integration API",
+    "summary": "Java (Spring Boot) REST APIs for transactions, refunds, and settlements. Swagger documented.",
+    "stack": ["Java", "Spring Boot", "MySQL", "Swagger"],
+    "github": "https://github.com/Sanjana-quad/merchant-payment-integration",
+    "demo": null
+  },
+  {
+    "id": "ragg-qa",
+    "title": "RAG-Based Question Answering System (ongoing)",
+    "summary": "LangChain + FAISS/Chroma, FastAPI integration to serve contextual QA responses.",
+    "stack": ["Python", "LangChain", "FastAPI", "FAISS"],
+    "github": "https://github.com/Sanjana-quad/rag-qa",
+    "demo": null
+  },
+  {
+    "id": "powerbi-dashboard",
+    "title": "Centralized Power BI Dashboard for DB Operations",
+    "summary": "Power BI dashboard integrated with Snowflake and Azure automations to monitor DBA operations.",
+    "stack": ["Power BI", "Snowflake", "Azure"],
+    "github": null,
+    "demo": null
+  }
+]

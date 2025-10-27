@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+html { transition: color 0.2s, background-color 0.2s; }
 
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
