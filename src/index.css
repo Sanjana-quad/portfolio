@@ -1,5 +1,9 @@
 
 
+
+@import "swiper/css";
+/* @import "swiper/css/pagination";
+@import "swiper/css/navigation"; optional if you’ll add arrows later */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

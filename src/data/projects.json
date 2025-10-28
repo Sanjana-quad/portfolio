@@ -1,26 +1,45 @@
-[
-  {
-    "id": "merchant-api",
-    "title": "Merchant Payment Integration API",
-    "summary": "Java (Spring Boot) REST APIs for transactions, refunds, and settlements. Swagger documented.",
-    "stack": ["Java", "Spring Boot", "MySQL", "Swagger"],
-    "github": "https://github.com/Sanjana-quad/merchant-payment-integration",
-    "demo": null
-  },
-  {
-    "id": "ragg-qa",
-    "title": "RAG-Based Question Answering System (ongoing)",
-    "summary": "LangChain + FAISS/Chroma, FastAPI integration to serve contextual QA responses.",
-    "stack": ["Python", "LangChain", "FastAPI", "FAISS"],
-    "github": "https://github.com/Sanjana-quad/rag-qa",
-    "demo": null
-  },
-  {
-    "id": "powerbi-dashboard",
-    "title": "Centralized Power BI Dashboard for DB Operations",
-    "summary": "Power BI dashboard integrated with Snowflake and Azure automations to monitor DBA operations.",
-    "stack": ["Power BI", "Snowflake", "Azure"],
-    "github": null,
-    "demo": null
-  }
-]
+{
+  "featured": [
+    {
+      "title": "Merchant Payment Integration API",
+      "description": "Developed REST APIs for transaction, refund, and settlement operations using Spring Boot and MySQL.",
+      "technologies": ["Java", "Spring Boot", "MySQL", "Swagger"],
+      "image": "/assets/projects/payment_api.png",
+      "github": "https://github.com/Sanjana-quad/merchant-payment-api"
+    },
+    {
+      "title": "RAG-Based Question Answering System",
+      "description": "Built a contextual chatbot using LangChain and FAISS, exploring RAG-based LLM workflows with FastAPI.",
+      "technologies": ["LangChain", "FastAPI", "Python", "FAISS"],
+      "image": "/assets/projects/rag_system.png",
+      "github": "#"
+    },
+    {
+      "title": "Intracity Ride Booking Platform",
+      "description": "Built a prototype ride booking app with role-based authentication and real-time updates using Go and React.",
+      "technologies": ["Go", "React", "MongoDB", "AWS"],
+      "image": "/assets/projects/ride_booking.png",
+      "github": "#"
+    }
+  ],
+  "all": [
+    {
+      "title": "Customer Churn Prediction",
+      "description": "Trained classification model to predict customer churn with 82% accuracy using TensorFlow.",
+      "technologies": ["Python", "TensorFlow", "Pandas"],
+      "github": "#"
+    },
+    {
+      "title": "Concurrent Chat Room",
+      "description": "Multi-client chat system using C++ sockets and multithreading for real-time communication.",
+      "technologies": ["C++", "TCP/IP"],
+      "github": "#"
+    },
+    {
+      "title": "Library Management System",
+      "description": "CLI-based book inventory manager using STL containers and algorithms for fast search/sort operations.",
+      "technologies": ["C++", "STL"],
+      "github": "#"
+    }
+  ]
+}
