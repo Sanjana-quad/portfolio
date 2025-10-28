@@ -71,13 +71,13 @@ export default function Projects() {
                   <a href={proj.github} target="_blank" className="underline">
                     GitHub
                   </a> 
-                {/* 
+                
                   {proj.demo !== "#" && (
                     <a href={proj.demo} target="_blank" className="underline">
                       Live Demo
                     </a>
                   )}
-                 */}
+                
                  </div>
               </div>
             </div>
