@@ -1,0 +1,34 @@
+{
+  "achievements": [
+    {
+      "title": "National Finalist - Smart India Hackathon",
+      "organization": "Government of India",
+      "year": "2024",
+      "description": "Developed a smart IoT-based monitoring system for public infrastructure efficiency using ESP32 and MQTT."
+    },
+    {
+      "title": "Dean’s Merit Award",
+      "organization": "University of XYZ",
+      "year": "2023",
+      "description": "Recognized for academic excellence in the Department of Computer Science."
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Oracle Cloud Infrastructure Foundations 2024 Certified",
+      "organization": "Oracle University",
+      "year": "2025",
+      "image": "/assets/certifications/oci.png",
+      "credential": "https://learn.oracle.com/...",
+      "skills": ["OCI", "Cloud Architecture", "Storage", "Networking"]
+    },
+    {
+      "title": "Power BI Data Analyst Associate",
+      "organization": "Microsoft",
+      "year": "2024",
+      "image": "/assets/certifications/powerbi.png",
+      "credential": "https://learn.microsoft.com/...",
+      "skills": ["DAX", "Data Modelling", "Visualization", "Reporting"]
+    }
+  ]
+}
