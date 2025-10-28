@@ -1,45 +1,56 @@
-{
-  "featured": [
+ [
     {
       "title": "Merchant Payment Integration API",
+     "type": "Featured",
       "description": "Developed REST APIs for transaction, refund, and settlement operations using Spring Boot and MySQL.",
       "technologies": ["Java", "Spring Boot", "MySQL", "Swagger"],
-      "image": "/assets/projects/payment_api.png",
-      "github": "https://github.com/Sanjana-quad/merchant-payment-api"
+      "image": "/icons/payment_api.png",
+      "github": "https://github.com/Sanjana-quad/merchant-payment-api",
+      "demo" : "#"
     },
     {
       "title": "RAG-Based Question Answering System",
+    "type": "Featured",
       "description": "Built a contextual chatbot using LangChain and FAISS, exploring RAG-based LLM workflows with FastAPI.",
       "technologies": ["LangChain", "FastAPI", "Python", "FAISS"],
-      "image": "/assets/projects/rag_system.png",
-      "github": "#"
+      "image": "/icons/rag_system.jpg",
+      "github": "#",
+      "demo" : "#"
     },
     {
       "title": "Intracity Ride Booking Platform",
+    "type": "Featured",
       "description": "Built a prototype ride booking app with role-based authentication and real-time updates using Go and React.",
       "technologies": ["Go", "React", "MongoDB", "AWS"],
-      "image": "/assets/projects/ride_booking.png",
-      "github": "#"
-    }
-  ],
-  "all": [
+      "image": "/icons/ride_booking.jpg",
+      "github": "#",
+      "demo" : "#"
+    },
     {
       "title": "Customer Churn Prediction",
+    "type": "General",
       "description": "Trained classification model to predict customer churn with 82% accuracy using TensorFlow.",
       "technologies": ["Python", "TensorFlow", "Pandas"],
-      "github": "#"
+      "image": "/icons/churn.jpg",
+      "github": "#",
+      "demo" : "#"
     },
     {
       "title": "Concurrent Chat Room",
+    "type": "General",
       "description": "Multi-client chat system using C++ sockets and multithreading for real-time communication.",
       "technologies": ["C++", "TCP/IP"],
-      "github": "#"
+      "image": "/icons/chat.jpg",
+      "github": "#",
+      "demo" : "#"
     },
     {
       "title": "Library Management System",
+          "type": "General",
       "description": "CLI-based book inventory manager using STL containers and algorithms for fast search/sort operations.",
       "technologies": ["C++", "STL"],
-      "github": "#"
+      "image": "/icons/library.png",
+      "github": "#",
+      "demo" : "#"
     }
   ]
-}
