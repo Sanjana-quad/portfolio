@@ -1,18 +1,33 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import data from "../data/skills.json";
-const layoutType = "rings";
+// import { Button } from "@/components/ui/button"; // optional if using shadcn/ui, otherwise replace with a normal button
+import { ToggleLeft, ToggleRight } from "lucide-react";
+
+
+
+
 
 export default function Skills() {
     const [skills, setSkills] = useState({});
-
+    const [viewMode, setViewMode] = useState("rings");
+    const layoutType = viewMode;
+    
     useEffect(() => {
         // fetch("../data/skills.json")
         //   .then((res) => res.json())
         //   .then((data) => 
         setSkills(data);
     }, []);
+    
+    useEffect(() => {
+        const saved = localStorage.getItem("skills-view");
+        if (saved) setViewMode(saved);
+    }, []);
 
+    useEffect(() => {
+        localStorage.setItem("skills-view", viewMode);
+    }, [viewMode]);
 
     if (!Object.keys(skills).length) {
         return (
@@ -33,7 +48,27 @@ export default function Skills() {
                     Skills & Tools
                 </h2>
 
+                <div className="flex justify-end items-center mb-4 pr-4">
+                    <button
+                        onClick={() => setViewMode(viewMode === "rings" ? "bars" : "rings")}
+                        className="flex items-center gap-2 text-sm px-3 py-1.5 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-200/60 dark:hover:bg-gray-800/60 transition"
+                    >
+                        {viewMode === "rings" ? (
+                            <>
+                                <ToggleRight className="w-4 h-4" /> Switch to Bars
+                            </>
+                        ) : (
+                            <>
+                                <ToggleLeft className="w-4 h-4" /> Switch to Rings
+                            </>
+                        )}
+                    </button>
+                </div>
+
+
+
                 <div className="space-y-12">
+
                     {Object.entries(skills).map(([category, items]) => (
                         <div key={category}>
                             <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-6 border-l-4 border-indigo-500 pl-3">
@@ -45,8 +80,8 @@ export default function Skills() {
 
 
                                 {items.map((skill, index) => (
-                                <>
-                                        { layoutType === "rings" ? (
+                                    <>
+                                        {layoutType === "rings" ? (
                                             <motion.div
                                                 key={index}
                                                 className="relative flex flex-col items-center justify-center p-4 bg-white/30 dark:bg-gray-800/40 rounded-2xl border border-gray-200/30 dark:border-gray-700/40 shadow-sm hover:shadow-md transition group"
@@ -124,7 +159,7 @@ export default function Skills() {
 
                                         )}
                                     </>
-                            ))}
+                                ))}
                             </div>
                         </div>
                     ))}
