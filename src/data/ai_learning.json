@@ -1,0 +1,23 @@
+[
+  {
+    "title": "RAG-Based Question Answering System",
+    "status": "Ongoing",
+    "description": "Developing a contextual QA chatbot using LangChain + FAISS/Chroma. Integrating RAG pipelines and FastAPI for deployment.",
+    "tags": ["LangChain", "FastAPI", "RAG", "Vector DB"],
+    "link": "https://github.com/Sanjana-quad/rag-qa"
+  },
+  {
+    "title": "Multilingual OCR + Speech-to-Text Pipeline",
+    "status": "Planned",
+    "description": "Designing pipeline for Telugu & English text using Tesseract + Whisper + Supabase. Aiming for AI Engineering capstone project.",
+    "tags": ["Whisper", "Tesseract", "Supabase", "Python"],
+    "link": "https://github.com/Sanjana-quad/multilingual-ocr"
+  },
+  {
+    "title": "IBM AI Developer Certificate",
+    "status": "In Progress",
+    "description": "Learning deep learning, computer vision, and NLP under IBM AI Developer Professional Certificate (9/10 courses completed).",
+    "tags": ["IBM", "Machine Learning", "Python", "Deep Learning"],
+    "link": "https://coursera.org"
+  }
+]
