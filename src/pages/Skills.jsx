@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import skillsData from "../data/skills.json"; 
+import data from "../data/skills.json"; 
 
 export default function Skills() {
   const [skills, setSkills] = useState({});
@@ -23,7 +23,7 @@ export default function Skills() {
       </section>
     );
   }
-  
+
   return (
     <section className="py-20 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950">
       <div className="max-w-6xl mx-auto px-6">
