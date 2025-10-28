@@ -1,0 +1,22 @@
+{
+  "Frontend": [
+    { "name": "HTML", "icon": "/icons/html.svg" },
+    { "name": "CSS", "icon": "/icons/css.svg" },
+    { "name": "JavaScript", "icon": "/icons/javascript.svg" },
+    { "name": "React", "icon": "/icons/react.svg" },
+    { "name": "Tailwind CSS", "icon": "/icons/tailwind.svg" }
+  ],
+  "Backend": [
+    { "name": "Node.js", "icon": "/icons/nodejs.svg" },
+    { "name": "Java (Spring Boot)", "icon": "/icons/java.svg" },
+    { "name": "MySQL", "icon": "/icons/mysql.svg" }
+  ],
+  "Tools": [
+    { "name": "Git", "icon": "/icons/git.svg" },
+    { "name": "GitHub", "icon": "/icons/github.svg" }
+  ],
+  "Cloud & Others": [
+    { "name": "Oracle Cloud (OCI)", "icon": "/icons/oci.svg" },
+    { "name": "Linux", "icon": "/icons/linux.svg" }
+  ]
+}
