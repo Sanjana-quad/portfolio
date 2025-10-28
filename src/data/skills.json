@@ -1,22 +1,22 @@
 {
   "Frontend": [
-    { "name": "HTML", "icon": "/icons/html.svg" },
-    { "name": "CSS", "icon": "/icons/css.svg" },
-    { "name": "JavaScript", "icon": "/icons/javascript.svg" },
-    { "name": "React", "icon": "/icons/react.svg" },
-    { "name": "Tailwind CSS", "icon": "/icons/tailwind.svg" }
+    { "name": "HTML", "icon": "/icons/html.svg", "level": 95, "desc": "Semantic structure & accessibility" },
+    { "name": "CSS", "icon": "/icons/css.svg", "level": 90, "desc": "Flexbox, Grid & Responsive layouts" },
+    { "name": "JavaScript", "icon": "/icons/javascript.svg", "level": 85, "desc": "ES6+, DOM, Async programming" },
+    { "name": "React", "icon": "/icons/react.svg", "level": 80, "desc": "Hooks, Router, Context API" },
+    { "name": "Tailwind CSS", "icon": "/icons/tailwind.svg", "level": 88, "desc": "Utility-first UI design" }
   ],
   "Backend": [
-    { "name": "Node.js", "icon": "/icons/nodejs.svg" },
-    { "name": "Java (Spring Boot)", "icon": "/icons/java.svg" },
-    { "name": "MySQL", "icon": "/icons/mysql.svg" }
+    { "name": "Node.js", "icon": "/icons/nodejs.svg", "level": 70, "desc": "Express.js, REST APIs" },
+    { "name": "Java (Spring Boot)", "icon": "/icons/java.svg", "level": 75, "desc": "Layered architecture, APIs" },
+    { "name": "MySQL", "icon": "/icons/mysql.svg", "level": 80, "desc": "Schema design, queries" }
   ],
   "Tools": [
-    { "name": "Git", "icon": "/icons/git.svg" },
-    { "name": "GitHub", "icon": "/icons/github.svg" }
+    { "name": "Git", "icon": "/icons/git.svg", "level": 85, "desc": "Version control, branching" },
+    { "name": "GitHub", "icon": "/icons/github.svg", "level": 90, "desc": "CI/CD, collaboration" }
   ],
   "Cloud & Others": [
-    { "name": "Oracle Cloud (OCI)", "icon": "/icons/oci.svg" },
-    { "name": "Linux", "icon": "/icons/linux.svg" }
+    { "name": "Oracle Cloud (OCI)", "icon": "/icons/oci.svg", "level": 85, "desc": "deploy cloud resources" },
+    { "name": "Linux", "icon": "/icons/linux.svg", "level": 85, "desc": "terminal operations, and system-level debugging" }
   ]
 }
