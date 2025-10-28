@@ -21,6 +21,7 @@ export default function Navbar() {
           <NavLink to="/" className="text-xl font-bold">Sanjana Satheesh</NavLink>
           <nav className="hidden md:flex items-center gap-1">
             <NavLink to="/" className={linkClass}>Home</NavLink>
+            <NavLink to="/about" className={linkClass}>About</NavLink>
             <NavLink to="/projects" className={linkClass}>Projects</NavLink>
             <NavLink to="/experience" className={linkClass}>Experience</NavLink>
             <NavLink to="/skills" className={linkClass}>Skills</NavLink>
