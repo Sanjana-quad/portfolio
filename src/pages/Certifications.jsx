@@ -5,7 +5,7 @@ export default function Achievements() {
   const [data, setData] = useState({ achievements: [], certifications: [] });
 
   useEffect(() => {
-    fetch("/data/achievements.json")
+    fetch("${import.meta.env.BASE_URL}/data/achievements.json")
       .then(res => res.json())
       .then(setData);
   }, []);

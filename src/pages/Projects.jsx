@@ -33,7 +33,7 @@ export default function Projects() {
   const [modal, setModal] = useState(null);
 
   useEffect(() => {
-    fetch("/data/projects.json")
+    fetch("${import.meta.env.BASE_URL}/data/projects.json")
       .then((res) => res.json())
       .then((data) => setProjects(data));
   }, []);
