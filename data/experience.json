@@ -1,0 +1,23 @@
+[
+  {
+    "company": "Fidelity Investments",
+    "role": "Data Engineering Apprentice",
+    "duration": "Sept 2024 – Present",
+    "location": "Chennai, India",
+    "projects": [
+      {
+        "title": "Centralized Power BI Dashboard for Database Operations",
+        "description": "Built a centralised dashboard in Power BI to monitor real-time database operations, including Jira intakes, server and database status, and DBA activities."
+      },
+      {
+        "title": "UDeploy Pipeline Migration to Jenkins",
+        "description": "Migrated deployment pipelines from UDeploy to Jenkins, ensuring smooth transition and reliability."
+      }
+    ],
+    "responsibilities": [
+      "Built centralized Power BI dashboards connected to Snowflake and Azure Portal APIs.",
+      "Migrated CI/CD pipelines to Jenkins using Bash automation.",
+      "Collaborated with DBA team for operational efficiency and documentation."
+    ]
+  }
+]
