@@ -1,56 +1,65 @@
- [
-    {
-      "title": "Merchant Payment Integration API",
-     "type": "Featured",
-      "description": "Developed REST APIs for transaction, refund, and settlement operations using Spring Boot and MySQL.",
-      "technologies": ["Java", "Spring Boot", "MySQL", "Swagger"],
-      "image": "/icons/payment_api.png",
-      "github": "https://github.com/Sanjana-quad/merchant-payment-api",
-      "demo" : "#"
-    },
-    {
-      "title": "RAG-Based Question Answering System",
+[
+  {
+    "title": "Merchant Payment Integration API",
     "type": "Featured",
-      "description": "Built a contextual chatbot using LangChain and FAISS, exploring RAG-based LLM workflows with FastAPI.",
-      "technologies": ["LangChain", "FastAPI", "Python", "FAISS"],
-      "image": "/icons/rag_system.jpg",
-      "github": "#",
-      "demo" : "#"
-    },
-    {
-      "title": "Intracity Ride Booking Platform",
+    "description": "Built a full REST API suite handling transactions, refunds, and settlements with Spring Boot and MySQL. Clean layered architecture and Swagger docs for seamless team collaboration.",
+    "technologies": ["Java", "Spring Boot", "MySQL", "Swagger"],
+    "image": "./icons/payment_api.png",
+    "github": "https://github.com/Sanjana-quad/merchant-payment-api",
+    "demo": "#"
+  },
+  {
+    "title": "Customer Churn Prediction Model",
     "type": "Featured",
-      "description": "Built a prototype ride booking app with role-based authentication and real-time updates using Go and React.",
-      "technologies": ["Go", "React", "MongoDB", "AWS"],
-      "image": "/icons/ride_booking.jpg",
-      "github": "#",
-      "demo" : "#"
-    },
-    {
-      "title": "Customer Churn Prediction",
+    "description": "Created a classification model achieving 82% accuracy to predict customer churn using structured telecom data.",
+    "technologies": ["Python", "Pandas", "NumPy", "TensorFlow"],
+    "image": "./icons/churn.jpg",
+    "github": "#",
+    "demo": "#"
+  },
+  {
+    "title": "RAG-Based Question Answering System (Ongoing)",
+    "type": "Featured",
+    "description": "Developing a contextual Q&A chatbot with retrieval-augmented generation — combining local document understanding with LLM reasoning via LangChain and FastAPI.",
+    "technologies": ["LangChain", "FAISS", "Chroma", "FastAPI"],
+    "image": "./icons/rag_system.jpg",
+    "github": "#",
+    "demo": "#"
+  },
+  {
+    "title": "Multilingual OCR + Speech-to-Text Pipeline (Planned)",
+    "type": "Featured",
+    "description": "Designing a multilingual AI pipeline for Malayalam & English — combining OCR, speech recognition, and Supabase for database integration.",
+    "technologies": ["Tesseract", "Whisper", "Supabase"],
+    "image": "./icons/ocr.png",
+    "github": "#",
+    "demo": "#"
+  },
+  {
+    "title": "Intracity Ride Booking Platform",
     "type": "General",
-      "description": "Trained classification model to predict customer churn with 82% accuracy using TensorFlow.",
-      "technologies": ["Python", "TensorFlow", "Pandas"],
-      "image": "/icons/churn.jpg",
-      "github": "#",
-      "demo" : "#"
-    },
-    {
-      "title": "Concurrent Chat Room",
+    "description": "Developed a ride booking platform with role-based authentication and real-time driver updates using Go and React.",
+    "technologies": ["Go", "React", "MongoDB"],
+    "image": "./icons/ride_booking.png",
+    "github": "#",
+    "demo": "#"
+  },
+  {
+    "title": "Concurrent Chat Room",
     "type": "General",
-      "description": "Multi-client chat system using C++ sockets and multithreading for real-time communication.",
-      "technologies": ["C++", "TCP/IP"],
-      "image": "/icons/chat.jpg",
-      "github": "#",
-      "demo" : "#"
-    },
-    {
-      "title": "Library Management System",
-          "type": "General",
-      "description": "CLI-based book inventory manager using STL containers and algorithms for fast search/sort operations.",
-      "technologies": ["C++", "STL"],
-      "image": "/icons/library.png",
-      "github": "#",
-      "demo" : "#"
-    }
-  ]
+    "description": "Multi-client chat system using C++ sockets and multithreading for real-time communication.",
+    "technologies": ["C++", "TCP/IP", "Multithreading"],
+    "image": "./icons/chat.jpg",
+    "github": "#",
+    "demo": "#"
+  },
+  {
+    "title": "Library Management System",
+    "type": "General",
+    "description": "CLI-based book inventory manager using STL containers and algorithms for fast search and sort operations.",
+    "technologies": ["C++", "STL"],
+    "image": "./icons/library.png",
+    "github": "#",
+    "demo": "#"
+  }
+]

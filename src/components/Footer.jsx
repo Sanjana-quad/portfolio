@@ -18,8 +18,8 @@ export default function Footer() {
         <p>© {currentYear} Sanjana Satheesh. All rights reserved.</p>
         <div className="flex gap-4">
           <a href="/" className="hover:text-indigo-500">Home</a>
-          <a href="/projects" className="hover:text-indigo-500">Projects</a>
-          <a href="/contact" className="hover:text-indigo-500">Contact</a>
+          <a href="/portfolio/projects" className="hover:text-indigo-500">Projects</a>
+          <a href="/portfolio/contact" className="hover:text-indigo-500">Contact</a>
         </div>
       </div>
     </footer>

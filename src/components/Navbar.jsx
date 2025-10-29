@@ -1,10 +1,11 @@
-import { NavLink } from "react-router-dom";
-import { FiGithub, FiMail, FiSun, FiMoon} from "react-icons/fi";
+import { NavLink, Link } from "react-router-dom";
+import { FiGithub, FiMail, FiSun, FiMoon } from "react-icons/fi";
 import useTheme from "../hooks/useTheme";
+import { FileText } from "lucide-react";
 
 
 export default function Navbar() {
-    const [theme, setTheme] = useTheme();
+  const [theme, setTheme] = useTheme();
 
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
@@ -22,9 +23,9 @@ export default function Navbar() {
           <nav className="hidden md:flex items-center gap-1">
             <NavLink to="/" className={linkClass}>Home</NavLink>
             <NavLink to="/about" className={linkClass}>About</NavLink>
+            <NavLink to="/skills" className={linkClass}>Skills</NavLink>
             <NavLink to="/projects" className={linkClass}>Projects</NavLink>
             <NavLink to="/experience" className={linkClass}>Experience</NavLink>
-            <NavLink to="/skills" className={linkClass}>Skills</NavLink>
             <NavLink to="/certifications" className={linkClass}>Certifications</NavLink>
             <NavLink to="/ailearning" className={linkClass}>AI Learning</NavLink>
             <NavLink to="/contact" className={linkClass}>Contact</NavLink>
@@ -32,18 +33,20 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-3">
-            <button onClick={toggleTheme} className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700" title={theme === "dark" ? "Switch to dark mode" : "Switch to light mode"} >
+          <button onClick={toggleTheme} className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700" title={theme === "dark" ? "Switch to dark mode" : "Switch to light mode"} >
             {theme === "dark" ? <FiMoon size={18} /> : <FiSun size={18} />}
           </button>
-          <a href="https://github.com/Sanjana-quad" target="_blank" rel="noreferrer" className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700">
+          <a href="https://github.com/Sanjana-quad" target="_blank" rel="noopener noreferrer" className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700">
             <FiGithub size={18} />
           </a>
           <a href="mailto:sanjanasatheesh.ss@gmail.com" className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700">
             <FiMail size={18} />
           </a>
-          <a href="/resume" className="ml-2 inline-block px-3 py-1.5 border rounded-md text-sm bg-indigo-600 text-white hover:bg-indigo-700">
+          <Link to="/resume" className="hover:text-indigo-500 flex items-center gap-2">
+            <FileText className="w-5 h-5" />
             Resume
-          </a>
+          </Link>
+
         </div>
       </div>
     </header>

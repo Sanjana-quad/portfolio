@@ -1,39 +1,87 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import data from "../data/ai_learning.json";
-import { ExternalLink, BookOpen } from "lucide-react";
+import { ExternalLink, BookOpen, Sparkles } from "lucide-react";
+
+const learningData = [
+  {
+    title: "Azure AI Fundamentals (Planned)",
+    description:
+      "Learning to apply Azure AI services for intelligent automation, data-driven insights, and production-ready pipelines.",
+    tags: ["Azure", "AI Services", "Automation"],
+    status: "Planned",
+  },
+  {
+    title: "Azure AI Engineer Associate (Planned)",
+    description:
+      "Aiming to deepen my understanding of AI model deployment and system integration using Microsoft’s cloud ecosystem.",
+    tags: ["Azure", "Deployment", "System Integration"],
+    status: "Planned",
+  },
+  {
+    title: "AI-Driven Application Development",
+    description:
+      "Personal projects focusing on integrating predictive analytics and emotion-aware features into everyday tools.",
+    tags: ["Predictive Analytics", "AI", "Projects"],
+    status: "Ongoing",
+  },
+  {
+    title: "Microservices & Scalable Architecture Design",
+    description:
+      "Exploring distributed systems, API integration, and CI/CD pipelines to optimize how modern apps evolve.",
+    tags: ["Microservices", "CI/CD", "Architecture"],
+    status: "Exploring",
+  },
+];
 
 export default function AILearning() {
   const [selected, setSelected] = useState(null);
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-950 dark:to-gray-900">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="py-20 bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900 relative overflow-hidden">
+      {/* Subtle glow backdrop */}
+      <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500/10 via-purple-500/10 to-transparent blur-3xl" />
+
+      <div className="max-w-6xl mx-auto px-6 relative z-10">
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-4xl font-bold text-center mb-10 text-gray-900 dark:text-gray-100"
+          transition={{ duration: 0.6 }}
+          className="text-4xl font-bold text-center text-gray-900 dark:text-gray-100 mb-4"
         >
-          AI & Learning Journey
+          🌱 Personal Learning & Future Goals
         </motion.h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {data.map((item, index) => (
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="text-center text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-12"
+        >
+          <span className="font-medium text-indigo-500">Structured curiosity — always in motion.</span> <br />
+          Certifications give me structure, but projects give me purpose — I’m always looking for that next spark of curiosity that keeps me growing.
+        </motion.p>
+
+        {/* Learning cards */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {learningData.map((item, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
               onClick={() => setSelected(item)}
-              className="p-6 bg-white/60 dark:bg-gray-800/60 border border-gray-200 dark:border-gray-700 rounded-2xl cursor-pointer hover:shadow-lg hover:-translate-y-1 transition-all backdrop-blur"
+              className="group p-6 bg-white/70 dark:bg-gray-800/70 border border-gray-200 dark:border-gray-700 rounded-2xl cursor-pointer hover:shadow-[0_0_20px_rgba(139,92,246,0.2)] hover:-translate-y-1 transition-all backdrop-blur-lg"
             >
               <div className="flex justify-between items-center">
-                <h3 className="font-semibold text-xl text-indigo-600 dark:text-indigo-400">{item.title}</h3>
+                <h3 className="font-semibold text-xl text-indigo-600 dark:text-indigo-400 group-hover:text-indigo-500 transition">
+                  {item.title}
+                </h3>
                 <BookOpen className="w-5 h-5 text-indigo-500" />
               </div>
-              <p className="mt-3 text-gray-700 dark:text-gray-300 text-sm line-clamp-3">{item.description}</p>
-              <div className="mt-3 flex flex-wrap gap-2">
+              <p className="mt-3 text-gray-700 dark:text-gray-300 text-sm line-clamp-3">
+                {item.description}
+              </p>
+              <div className="mt-4 flex flex-wrap gap-2">
                 {item.tags.map((tag, i) => (
                   <span
                     key={i}
@@ -48,7 +96,24 @@ export default function AILearning() {
           ))}
         </div>
 
-        {/* --- Modal --- */}
+        {/* Learning Philosophy */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+          className="mt-16 text-center"
+        >
+          <Sparkles className="mx-auto w-8 h-8 text-indigo-500 mb-3" />
+          <p className="text-lg italic text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+            “<span className="text-indigo-500 font-medium">Certifications build foundations. Projects build conviction.</span>”
+          </p>
+          <p className="text-gray-600 dark:text-gray-400 mt-2">
+            Every skill I pursue ties back to a bigger goal — becoming someone who doesn’t just understand technology,
+            but knows how to use it to build meaningful things.
+          </p>
+        </motion.div>
+
+        {/* Modal */}
         <AnimatePresence>
           {selected && (
             <motion.div
@@ -60,7 +125,7 @@ export default function AILearning() {
             >
               <motion.div
                 onClick={(e) => e.stopPropagation()}
-                className="max-w-lg w-full bg-white dark:bg-gray-900 rounded-2xl p-6 border border-gray-200 dark:border-gray-700"
+                className="max-w-lg w-full bg-white dark:bg-gray-900 rounded-2xl p-6 border border-gray-200 dark:border-gray-700 shadow-xl"
                 initial={{ scale: 0.9 }}
                 animate={{ scale: 1 }}
                 exit={{ scale: 0.9 }}
@@ -79,13 +144,17 @@ export default function AILearning() {
                     </span>
                   ))}
                 </div>
-                <a
-                  href={selected.link}
-                  target="_blank"
-                  className="inline-flex items-center gap-2 text-indigo-500 hover:text-indigo-600 text-sm"
-                >
-                  View Project <ExternalLink className="w-4 h-4" />
-                </a>
+                <div className="text-sm text-indigo-500">{selected.status}</div>
+                {selected.link && (
+                  <a
+                    href={selected.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 mt-3 text-indigo-500 hover:text-indigo-600 text-sm"
+                  >
+                    View Resource <ExternalLink className="w-4 h-4" />
+                  </a>
+                )}
               </motion.div>
             </motion.div>
           )}

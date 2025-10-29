@@ -62,10 +62,15 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation, EffectCoverflow } from "swiper/modules";
 import { motion } from "framer-motion";
+import { useRef } from "react";
+import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
 
 export default function FeaturedProjects({ featured }) {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+
   return (
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950 relative">
       <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-gray-100 mb-12">
@@ -88,7 +93,17 @@ export default function FeaturedProjects({ featured }) {
           }}
           autoplay={{ delay: 4500, disableOnInteraction: false }}
           pagination={{ clickable: true }}
-          navigation={true}
+          // ✅ Connect navigation buttons here
+          navigation={{
+            prevEl: prevRef.current,
+            nextEl: nextRef.current,
+          }}
+          onInit={(swiper) => {
+            swiper.params.navigation.prevEl = prevRef.current;
+            swiper.params.navigation.nextEl = nextRef.current;
+            swiper.navigation.init();
+            swiper.navigation.update();
+          }}
           className="swiper-container px-4"
         >
           {featured.map((project, index) => (
@@ -143,9 +158,15 @@ export default function FeaturedProjects({ featured }) {
           ))}
         </Swiper>
 
-        {/* Custom Navigation Buttons */}
-        <div className="swiper-button-prev !text-indigo-500 hover:scale-110 transition-transform"></div>
-        <div className="swiper-button-next !text-indigo-500 hover:scale-110 transition-transform"></div>
+        {/* ✅ These now control the Swiper properly */}
+        <button
+          ref={prevRef}
+          className="swiper-button-prev !text-indigo-500 hover:scale-110 transition-transform"
+        ></button>
+        <button
+          ref={nextRef}
+          className="swiper-button-next !text-indigo-500 hover:scale-110 transition-transform"
+        ></button>
       </div>
     </section>
   );
