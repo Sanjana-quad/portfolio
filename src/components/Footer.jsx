@@ -17,9 +17,9 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-3 text-sm text-gray-500 dark:text-gray-400">
         <p>© {currentYear} Sanjana Satheesh. All rights reserved.</p>
         <div className="flex gap-4">
-          <a href="#home" className="hover:text-indigo-500">Home</a>
-          <a href="#projects" className="hover:text-indigo-500">Projects</a>
-          <a href="#contact" className="hover:text-indigo-500">Contact</a>
+          <a href="/" className="hover:text-indigo-500">Home</a>
+          <a href="/projects" className="hover:text-indigo-500">Projects</a>
+          <a href="/contact" className="hover:text-indigo-500">Contact</a>
         </div>
       </div>
     </footer>

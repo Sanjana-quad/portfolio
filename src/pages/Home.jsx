@@ -134,7 +134,7 @@ export default function Home() {
           </motion.a>
 
           <motion.a
-            href="#contact"
+            href="/contact"
             whileHover={{ scale: 1.05 }}
             className="px-6 py-3 rounded-md border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300"
           >
