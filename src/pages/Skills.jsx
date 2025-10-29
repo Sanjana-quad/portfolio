@@ -121,7 +121,7 @@ export default function Skills() {
                                                         </defs>
                                                     </svg>
                                                     <div className="absolute inset-0 flex items-center justify-center">
-                                                        <img src={skill.icon} alt={skill.name} className="w-8 h-8" />
+                                                        <img src={`${import.meta.env.BASE_URL}${skill.icon}`} alt={skill.name} className="w-8 h-8" />
                                                     </div>
                                                 </div>
                                                 <p className="text-sm font-medium text-gray-700 dark:text-gray-300">{skill.name}</p>
@@ -139,7 +139,7 @@ export default function Skills() {
                                                 whileHover={{ scale: 1.03 }}
                                             >
                                                 <div className="flex items-center space-x-3 mb-2">
-                                                    <img src={skill.icon} alt={skill.name} className="w-8 h-8" />
+                                                    <img src={`${import.meta.env.BASE_URL}${skill.icon}`} alt={skill.name} className="w-8 h-8" />
                                                     <p className="text-sm font-medium text-gray-700 dark:text-gray-300">{skill.name}</p>
                                                 </div>
                                                 <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 relative">

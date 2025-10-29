@@ -33,7 +33,7 @@ export default function Projects() {
   const [modal, setModal] = useState(null);
 
   useEffect(() => {
-    fetch("${import.meta.env.BASE_URL}/data/projects.json")
+    fetch(`${import.meta.env.BASE_URL}data/projects.json`)
       .then((res) => res.json())
       .then((data) => setProjects(data));
   }, []);
@@ -60,7 +60,7 @@ export default function Projects() {
           {featured.map((proj, index) => (
             <div key={index} className="relative group mx-auto max-w-4xl">
               <img
-                src={proj.image}
+                src={`${import.meta.env.BASE_URL}${proj.image}`}
                 alt={proj.title}
                 className="object-cover h-[420px] w-full rounded-2xl opacity-90 group-hover:opacity-100 transition"
               />
@@ -94,7 +94,7 @@ export default function Projects() {
               whileHover={{ scale: 1.03 }}
             >
               <img
-                src={proj.image}
+                src={`${import.meta.env.BASE_URL}${proj.image}`}
                 alt={proj.title}
                 className="rounded-xl mb-4 w-full h-48 object-cover"
               />
