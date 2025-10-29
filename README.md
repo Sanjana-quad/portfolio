@@ -79,30 +79,30 @@ This portfolio showcases:
 ## ⚙️ Folder Structure
 
 src/
-┣ components/
-┃ ┣ Navbar.jsx
-┃ ┣ Footer.jsx
-┃ ┣ ProjectCard.jsx
-┃ ┣ SkillProgress.jsx
-┃ ┗ ThemeToggle.jsx
-┣ pages/
-┃ ┣ Home.jsx
-┃ ┣ About.jsx
-┃ ┣ Experience.jsx
-┃ ┣ Projects.jsx
-┃ ┣ Skills.jsx
-┃ ┣ Certifications.jsx
-┃ ┣ AILearning.jsx
-┃ ┗ Contact.jsx
-┣ data/
-┃ ┣ projects.json
-┃ ┣ skills.json
-┃ ┗ certifications.json
-┣ assets/
-┃ ┗ images, logos, icons
-┣ App.jsx
-┣ main.jsx
-┗ index.css
+- components/
+- - Navbar.jsx
+- - Footer.jsx
+- - ProjectCard.jsx
+- - SkillProgress.jsx
+- - ThemeToggle.jsx
+- pages/
+- - Home.jsx
+- - About.jsx
+- - Experience.jsx
+- - Projects.jsx
+- - Skills.jsx
+- - Certifications.jsx
+- - AILearning.jsx
+- - Contact.jsx
+- data/
+- - projects.json
+- - skills.json
+- - certifications.json
+- assets/
+- - images, logos, icons
+- App.jsx
+- main.jsx
+- index.css
 
 
 ---
