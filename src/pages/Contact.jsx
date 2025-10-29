@@ -74,13 +74,18 @@ export default function Contact() {
 
         {/* --- Social Links --- */}
         <div className="flex justify-center gap-6 mt-10 text-gray-600 dark:text-gray-300">
-          <a href="mailto:sanjanasatheesh.ss@gmail.com" target="_blank" className="hover:text-indigo-500">
+          <a href="mailto:sanjanasatheesh.ss@gmail.com"
+            onClick={(e) => {
+              window.location.href = "mailto:" + ["sanjanasatheesh.ss", "gmail.com"].join("@");
+              e.preventDefault();
+            }}
+            className="hover:text-indigo-500">
             <Mail className="w-6 h-6" />
           </a>
-          <a href="https://linkedin.com/in/sanjana" target="_blank" className="hover:text-indigo-500">
+          <a href="https://www.linkedin.com/in/sanjana-satheesh-236233189/" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-500">
             <Linkedin className="w-6 h-6" />
           </a>
-          <a href="https://github.com/Sanjana-quad" target="_blank" className="hover:text-indigo-500">
+          <a href="https://github.com/Sanjana-quad" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-500">
             <Github className="w-6 h-6" />
           </a>
         </div>
