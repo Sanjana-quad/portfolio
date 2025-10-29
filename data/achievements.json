@@ -1,34 +1,64 @@
 {
   "achievements": [
     {
-      "title": "National Finalist - Smart India Hackathon",
-      "organization": "Government of India",
+      "title": "Solved 180+ Coding Problems",
+      "organization": "LeetCode & HackerRank",
       "year": "2024",
-      "description": "Developed a smart IoT-based monitoring system for public infrastructure efficiency using ESP32 and MQTT."
+      "description": "Strengthened algorithmic thinking and problem-solving efficiency by solving over 180+ problems in data structures and algorithms."
     },
     {
-      "title": "Dean’s Merit Award",
-      "organization": "University of XYZ",
+      "title": "Flutter App Prototype Presentation",
+      "organization": "IEDC Centre, SJCET Palai",
       "year": "2023",
-      "description": "Recognized for academic excellence in the Department of Computer Science."
+      "description": "Presented a Flutter-based app prototype emphasizing user-centric UI/UX and streamlined data flow for local problem-solving."
+    },
+    {
+      "title": "Internal CI/CD Automation Guides",
+      "organization": "Fidelity Investments",
+      "year": "2024",
+      "description": "Authored team-wide documentation for pipeline migration and automation workflows, simplifying onboarding and operational processes."
+    },
+    {
+      "title": "AI & Microservices Experimentation",
+      "organization": "Personal Projects",
+      "year": "Ongoing",
+      "description": "Building AI-powered automation tools and experimenting with microservice-based architectures to bring ideas to life."
     }
   ],
+
   "certifications": [
     {
-      "title": "Oracle Cloud Infrastructure Foundations 2024 Certified",
-      "organization": "Oracle University",
-      "year": "2025",
-      "image": "/assets/certifications/oci.png",
-      "credential": "https://learn.oracle.com/...",
-      "skills": ["OCI", "Cloud Architecture", "Storage", "Networking"]
+      "title": "IBM AI Developer Professional Certificate",
+      "organization": "IBM",
+      "year": "In Progress (9/10 Courses Completed)",
+      "image": "./icons/ibm.png",
+      "skills": ["AI Development", "Machine Learning", "Model Deployment"],
+      "description": "Exploring the end-to-end lifecycle of AI — from design to scalable deployment with best practices for production-ready models."
     },
     {
-      "title": "Power BI Data Analyst Associate",
-      "organization": "Microsoft",
+      "title": "Oracle Cloud Infrastructure AI Foundations Associate",
+      "organization": "Oracle",
       "year": "2024",
-      "image": "/assets/certifications/powerbi.png",
-      "credential": "https://learn.microsoft.com/...",
-      "skills": ["DAX", "Data Modelling", "Visualization", "Reporting"]
+      "image": "./icons/oci.jpeg",
+      "skills": ["OCI", "AI Services", "Responsible ML"],
+      "description": "Learned OCI’s AI and data services, focusing on building ethical and efficient AI workflows within the cloud ecosystem."
+    },
+    {
+      "title": "Vector Institute Embedded Systems Training",
+      "organization": "Vector Institute",
+      "year": "2023",
+      "image": "./icons/vector.png",
+      "skills": ["C", "C++", "ARM7", "Linux Systems"],
+      "description": "Hands-on embedded systems training covering low-level memory control, system interfacing, and hardware debugging."
+    },
+    {
+      "title": "IBM Software Engineering Essentials",
+      "organization": "IBM",
+      "year": "2024",
+      "image": "./icons/ibm2.png",
+      "skills": ["Agile", "Version Control", "Software Architecture"],
+      "description": "Studied scalable system design and agile software engineering principles for practical development workflows."
     }
   ]
 }
+
