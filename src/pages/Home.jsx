@@ -126,7 +126,7 @@ export default function Home() {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
           <motion.a
-            href="#projects"
+            href="/projects"
             whileHover={{ scale: 1.05 }}
             className="px-6 py-3 rounded-md bg-gradient-to-r from-primary to-accent-purple text-white font-medium shadow-glow hover:shadow-lg transition-all duration-300"
           >
