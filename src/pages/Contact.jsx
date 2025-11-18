@@ -33,7 +33,7 @@ export default function Contact() {
           </h2>
           <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
             I’m always open to conversations, collaborations, and new opportunities.
-            Whether it’s about <span className="text-indigo-500">data, AI</span>, or building something meaningful — I’d love to connect.
+            Let's connect!
           </p>
         </motion.div>
 
@@ -56,7 +56,7 @@ export default function Contact() {
                 <div className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-indigo-500" />
                   <a
-                    href="mailto:sanjanasatheesh.ss@gmail.com"
+                    href="mailto:sanjanasatheesh.ss@gmail.com" target = "_blank" rel="noopener noreferrer"
                     className="hover:text-indigo-500 transition"
                   >
                     sanjanasatheesh.ss@gmail.com

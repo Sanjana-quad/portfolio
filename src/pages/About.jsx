@@ -44,23 +44,14 @@ export default function About() {
         {/* Narrative Section */}
         <div className="space-y-6 text-gray-700 dark:text-gray-300 leading-relaxed text-base sm:text-lg">
           <p>
-            I began my journey in <span className="font-semibold text-orange-600 dark:text-purple-300">Electronics and Communication Engineering</span>, 
-            where I developed my logical foundation and curiosity for systems that communicate and learn.
+            I began my journey in embedded systems, focusing on how software controls and interacts with hardware.
           </p>
 
           <p>
-            Over time, my path evolved — from managing databases and automating data pipelines at previous company, 
+            Over time, my path evolved - from managing databases and automating data pipelines, 
             to experimenting with AI models, RAG-based systems, and multilingual OCR pipelines in my personal projects.
           </p>
-
-          <p>
-            What started as curiosity became conviction. Today, I’m exploring the intersection of 
-            <span className="font-semibold text-orange-600 dark:text-purple-300"> data engineering </span> 
-            and 
-            <span className="font-semibold text-orange-600 dark:text-purple-300"> AI development</span> — 
-            where structured data meets intelligent automation.
-          </p>
-        </div>
+          </div>
 
         {/* Focus Section */}
         <motion.div

@@ -57,8 +57,8 @@ export default function AILearning() {
           transition={{ delay: 0.2 }}
           className="text-center text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-12"
         >
-          <span className="font-medium text-indigo-500">Structured curiosity — always in motion.</span> <br />
-          Certifications give me structure, but projects give me purpose — I’m always looking for that next spark of curiosity that keeps me growing.
+          {/* <span className="font-medium text-indigo-500">Structured curiosity — always in motion.</span> <br />
+          Certifications give me structure, but projects give me purpose — I’m always looking for that next spark of curiosity that keeps me growing. */}
         </motion.p>
 
         {/* Learning cards */}
@@ -105,12 +105,9 @@ export default function AILearning() {
         >
           <Sparkles className="mx-auto w-8 h-8 text-indigo-500 mb-3" />
           <p className="text-lg italic text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
-            “<span className="text-indigo-500 font-medium">Certifications build foundations. Projects build conviction.</span>”
+            “<span className="text-indigo-500 font-medium">I plan on updating this page soon. Stay tuned!</span>”
           </p>
-          <p className="text-gray-600 dark:text-gray-400 mt-2">
-            Every skill I pursue ties back to a bigger goal — becoming someone who doesn’t just understand technology,
-            but knows how to use it to build meaningful things.
-          </p>
+          
         </motion.div>
 
         {/* Modal */}

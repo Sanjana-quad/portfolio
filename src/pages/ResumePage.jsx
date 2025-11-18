@@ -1,10 +1,13 @@
 // src/pages/ResumePage.jsx
 import { motion } from "framer-motion";
 import { Download, FileText } from "lucide-react";
+// import { Worker, Viewer } from '@react-pdf-viewer/core';
+// import '@react-pdf-viewer/core/lib/styles/index.css';
+
 
 export default function ResumePage() {
   // Store the PDF inside public/resume/
-  const resumePath = "/resume/Sanjana_Resume.pdf";
+  const resumePath = "/Sanjana_Resume.pdf";
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900 overflow-hidden">
@@ -31,20 +34,20 @@ export default function ResumePage() {
           transition={{ delay: 0.2 }}
           className="relative w-full max-w-6xl h-[85vh] bg-white/70 dark:bg-gray-800/60 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-2xl overflow-hidden backdrop-blur-xl"
         >
-          {/* Use Google Docs Viewer for consistent in-browser rendering */}
-          <iframe
-            src={`https://docs.google.com/gview?url=${window.location.origin}${resumePath}&embedded=true`}
-            title="Resume Preview"
+          <embed
+            src={`${import.meta.env.BASE_URL}Sanjana_Resume.pdf`}
+            type="application/pdf"
             width="100%"
             height="100%"
-            className="border-none rounded-2xl"
-          ></iframe>
+          />
         </motion.div>
 
         {/* Download Button */}
-        <motion.a
-          href={resumePath}
-          download="Sanjana_Satheesh_Resume.pdf"
+        {/* <motion.a
+          href={`${import.meta.env.BASE_URL}/Sanjana_Resume.pdf`} // Path inside /public/resume/
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Download Resume (PDF, Opens in new tab)"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
@@ -52,7 +55,8 @@ export default function ResumePage() {
         >
           <Download className="w-5 h-5" />
           Download Resume (PDF)
-        </motion.a>
+        </motion.a> */}
+
       </motion.div>
     </section>
   );

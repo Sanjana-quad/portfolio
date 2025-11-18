@@ -189,7 +189,7 @@ export default function Skills() {
                     )}
 
                     {/* Tooltip */}
-                    <span className="absolute bottom-20 scale-0 rounded bg-gray-900 text-gray-100 text-xs py-1 px-2 group-hover:scale-100 transition-transform duration-200 whitespace-nowrap">
+                    <span className="absolute right-10 bottom-20 z-10 scale-0 rounded bg-gray-900 text-gray-100 text-xs py-1 px-1 group-hover:scale-100 transition-transform duration-200 whitespace-wrap">
                       {skill.desc}
                     </span>
                   </motion.div>

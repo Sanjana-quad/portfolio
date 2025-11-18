@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import profileImg from "../assets/profile.png";
+import profileImg from "../assets/latpic.jpg";
 import { ArrowDownCircle, Send } from "lucide-react";
 import { AiOutlineExperiment } from "react-icons/ai";
 
@@ -55,27 +55,26 @@ export default function Hero() {
           </span>
         </h1>
 
-        <h2 className="
+        {/* <h2 className="
       text-lg md:text-2xl 
       text-gray-700 dark:text-gray-300
       font-medium
     ">
           Building data-driven and AI-powered systems that learn, adapt, and deliver impact.
-        </h2>
+        </h2> */}
 
         <p className="text-gray-600 dark:text-gray-400 leading-relaxed max-w-xl mx-auto md:mx-0">
           I’m a Software Engineer passionate about
           <span className="text-orange-600 dark:text-teal-300 font-medium"> Data Engineering</span>,
           <span className="text-orange-600 dark:text-purple-300 font-medium"> AI Development</span>, and
           <span className="text-orange-600 dark:text-indigo-300 font-medium"> Scalable Backend Systems</span>.
-          I love solving real-world problems through code, design, and intelligent automation —
-          bringing together the best of software engineering and applied AI to build solutions that matter.
+          
         </p>
 
         {/* CTA Buttons */}
         <div className="flex justify-center md:justify-start gap-4 pt-4">
           <a
-            href="#projects"
+            href="/portfolio/projects"
             className="
           flex items-center gap-2 
           bg-gradient-to-r from-orange-500 to-yellow-500 
@@ -88,7 +87,7 @@ export default function Hero() {
             View My Work
           </a>
           <a
-            href="#contact"
+            href="/portfolio/contact"
             className="
           flex items-center gap-2 
           border border-gray-300 dark:border-gray-600

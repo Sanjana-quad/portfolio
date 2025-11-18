@@ -1,5 +1,14 @@
 [
   {
+    "title": "Clickstream Analytics Pipeline",
+    "type": "Featured",
+    "description": "Built a real-time clickstream pipeline using Kafka to track and analyze user engagement across simulated web events.",
+    "technologies": ["Python", "Apache Kafka", "Prometheus Client", "Grafana"],
+    "image": "./icons/click.webp",
+    "github": "https://github.com/Sanjana-quad/clickstream-analytics",
+    "demo": "#"
+  },
+  {
     "title": "Merchant Payment Integration API",
     "type": "Featured",
     "description": "Built a full REST API suite handling transactions, refunds, and settlements with Spring Boot and MySQL. Clean layered architecture and Swagger docs for seamless team collaboration.",
@@ -10,7 +19,7 @@
   },
   {
     "title": "Customer Churn Prediction Model",
-    "type": "Featured",
+    "type": "General",
     "description": "Created a classification model achieving 82% accuracy to predict customer churn using structured telecom data.",
     "technologies": ["Python", "Pandas", "NumPy", "TensorFlow"],
     "image": "./icons/churn.jpg",
@@ -36,30 +45,31 @@
     "demo": "#"
   },
   {
-    "title": "Intracity Ride Booking Platform",
-    "type": "General",
-    "description": "Developed a ride booking platform with role-based authentication and real-time driver updates using Go and React.",
-    "technologies": ["Go", "React", "MongoDB"],
-    "image": "./icons/ride_booking.png",
-    "github": "#",
-    "demo": "#"
-  },
-  {
     "title": "Concurrent Chat Room",
     "type": "General",
     "description": "Multi-client chat system using C++ sockets and multithreading for real-time communication.",
     "technologies": ["C++", "TCP/IP", "Multithreading"],
     "image": "./icons/chat.jpg",
-    "github": "#",
+    "github": "https://github.com/Sanjana-quad/Chat_App",
     "demo": "#"
   },
   {
-    "title": "Library Management System",
+    "title": "Real-Time Market Data Feed Pipeline",
     "type": "General",
-    "description": "CLI-based book inventory manager using STL containers and algorithms for fast search and sort operations.",
-    "technologies": ["C++", "STL"],
-    "image": "./icons/library.png",
-    "github": "#",
+    "description": "Simulated live stock-market tick data and streamed it through Kafka to explore real-time producer–consumer workflows.",
+    "technologies": ["Python","Apache Kafka", "Flask", "SQLite"],
+    "image": "./icons/market.png",
+    "github": "https://github.com/Sanjana-quad/Real-Time-Market-Data-Feed",
+    "demo": "#"
+  },
+  {
+    "title": "Order Event Processing System",
+    "type": "General",
+    "description": "Developed an end-to-end e-commerce event pipeline using Kafka, PostgreSQL, FastAPI, and Grafana for real-time order tracking and analytics.",
+    "technologies": ["Python", "Zookeeper", "Apache Kafka", "PostgreSQL", "Grafana"],
+    "image": "./icons/order.jpg",
+    "github": "https://github.com/Sanjana-quad/order-event-system",
     "demo": "#"
   }
+
 ]

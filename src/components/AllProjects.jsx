@@ -16,6 +16,14 @@ export default function AllProjects({ projects }) {
               className="bg-white/10 dark:bg-gray-800/40 backdrop-blur-md border border-gray-300/20 dark:border-gray-700/40
                          rounded-xl p-5 shadow-md hover:shadow-lg transition-all"
             >
+              <div className="relative w-full h-56 overflow-hidden rounded-xl">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="object-cover w-full h-full rounded-xl transition-transform duration-500 hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-xl"></div>
+                </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100">{project.title}</h3>
               <p className="text-gray-600 dark:text-gray-300 mt-2 text-sm">{project.description}</p>
 

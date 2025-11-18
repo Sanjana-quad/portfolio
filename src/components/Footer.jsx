@@ -7,7 +7,9 @@
 //     </footer>
 //   );
 // }
-
+import { FaLinkedin } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+import { FiGithub } from "react-icons/fi";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -16,8 +18,8 @@ export default function Footer() {
     <footer className="py-6 bg-white/60 dark:bg-gray-950/60 border-t border-gray-200 dark:border-gray-800 backdrop-blur">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-3 text-sm text-gray-500 dark:text-gray-400">
         <p>© {currentYear} Sanjana Satheesh. All rights reserved.</p>
-        <div className="flex gap-4">
-          <a href="/" className="hover:text-indigo-500">Home</a>
+        <div className="flex gap-1">
+          <a href="/portfolio/" className="hover:text-indigo-500">Home</a>
           <a href="/portfolio/projects" className="hover:text-indigo-500">Projects</a>
           <a href="/portfolio/contact" className="hover:text-indigo-500">Contact</a>
         </div>
