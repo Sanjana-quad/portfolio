@@ -37,7 +37,7 @@ export default function About() {
             💫 About Me
           </h2>
           <p className="text-lg text-gray-700 dark:text-gray-300 italic">
-            Blending logic, learning, and purpose in every line of code.
+            Curious by nature, grounded in fundamentals, and driven by building things that last.
           </p>
         </div>
 

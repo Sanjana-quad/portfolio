@@ -3,34 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink, BookOpen, Sparkles } from "lucide-react";
 
 const learningData = [
-  {
-    title: "Azure AI Fundamentals (Planned)",
-    description:
-      "Learning to apply Azure AI services for intelligent automation, data-driven insights, and production-ready pipelines.",
-    tags: ["Azure", "AI Services", "Automation"],
-    status: "Planned",
-  },
-  {
-    title: "Azure AI Engineer Associate (Planned)",
-    description:
-      "Aiming to deepen my understanding of AI model deployment and system integration using Microsoft’s cloud ecosystem.",
-    tags: ["Azure", "Deployment", "System Integration"],
-    status: "Planned",
-  },
-  {
-    title: "AI-Driven Application Development",
-    description:
-      "Personal projects focusing on integrating predictive analytics and emotion-aware features into everyday tools.",
-    tags: ["Predictive Analytics", "AI", "Projects"],
-    status: "Ongoing",
-  },
-  {
-    title: "Microservices & Scalable Architecture Design",
-    description:
-      "Exploring distributed systems, API integration, and CI/CD pipelines to optimize how modern apps evolve.",
-    tags: ["Microservices", "CI/CD", "Architecture"],
-    status: "Exploring",
-  },
+  
 ];
 
 export default function AILearning() {

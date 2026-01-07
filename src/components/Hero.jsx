@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import profileImg from "../assets/latpic.jpg";
+import profileImg from "../assets/ss.jpg";
 import { ArrowDownCircle, Send } from "lucide-react";
-import { AiOutlineExperiment } from "react-icons/ai";
+import AnimatedGridBackground from "../components/AnimatedGridBackground";
+
 
 export default function Hero() {
   return (
@@ -18,18 +19,20 @@ export default function Hero() {
     text-gray-900 dark:text-white
   "
     >
+
+       <AnimatedGridBackground />
       {/* Background Glow */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-100">
         {/* Light glow tint */}
         <div className="
       absolute top-1/2 left-1/2 w-[600px] h-[600px]
-      bg-orange-300/20 dark:bg-blue-500/20 
+      bg-orange-300/20 dark:bg-red-500/20 
       rounded-full blur-[120px] translate-x-[-50%] translate-y-[-50%]
     " />
         {/* Secondary glow */}
         <div className="
       absolute bottom-0 right-0 w-[400px] h-[400px]
-      bg-yellow-300/20 dark:bg-purple-600/20 
+      bg-yellow-300/20 dark:bg-cyan-600/20 
       rounded-full blur-[120px]
     " />
       </div>
@@ -64,11 +67,7 @@ export default function Hero() {
         </h2> */}
 
         <p className="text-gray-600 dark:text-gray-400 leading-relaxed max-w-xl mx-auto md:mx-0">
-          I’m a Software Engineer passionate about
-          <span className="text-orange-600 dark:text-teal-300 font-medium"> Data Engineering</span>,
-          <span className="text-orange-600 dark:text-purple-300 font-medium"> AI Development</span>, and
-          <span className="text-orange-600 dark:text-indigo-300 font-medium"> Scalable Backend Systems</span>.
-          
+          Backend Engineer building APIs today, designing interfaces for tomorrow.
         </p>
 
         {/* CTA Buttons */}

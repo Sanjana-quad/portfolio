@@ -29,12 +29,12 @@ export default function Navbar() {
           </NavLink>
           <nav className="hidden md:flex items-center gap-1">
             <NavLink to="/" className={linkClass}>Home</NavLink>
-            <NavLink to="/about" className={linkClass}>About</NavLink>
-            <NavLink to="/skills" className={linkClass}>Skills</NavLink>
             <NavLink to="/projects" className={linkClass}>Projects</NavLink>
+            {/* <NavLink to="/about" className={linkClass}>About</NavLink> */}
             <NavLink to="/experience" className={linkClass}>Experience</NavLink>
+            <NavLink to="/skills" className={linkClass}>Skills</NavLink>
             <NavLink to="/certifications" className={linkClass}>Certifications</NavLink>
-            <NavLink to="/ailearning" className={linkClass}>AI Learning</NavLink>
+            <NavLink to="/ailearning" className={linkClass}>Learning Progress</NavLink>
             <NavLink to="/contact" className={linkClass}>Contact</NavLink>
           </nav>
 

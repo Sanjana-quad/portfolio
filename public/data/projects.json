@@ -27,26 +27,8 @@
     "demo": "#"
   },
   {
-    "title": "RAG-Based Question Answering System (Ongoing)",
-    "type": "Featured",
-    "description": "Developing a contextual Q&A chatbot with retrieval-augmented generation — combining local document understanding with LLM reasoning via LangChain and FastAPI.",
-    "technologies": ["LangChain", "FAISS", "Chroma", "FastAPI"],
-    "image": "./icons/rag_system.jpg",
-    "github": "#",
-    "demo": "#"
-  },
-  {
-    "title": "Multilingual OCR + Speech-to-Text Pipeline (Planned)",
-    "type": "Featured",
-    "description": "Designing a multilingual AI pipeline for Malayalam & English — combining OCR, speech recognition, and Supabase for database integration.",
-    "technologies": ["Tesseract", "Whisper", "Supabase"],
-    "image": "./icons/ocr.png",
-    "github": "#",
-    "demo": "#"
-  },
-  {
     "title": "Concurrent Chat Room",
-    "type": "General",
+    "type":"Featured",
     "description": "Multi-client chat system using C++ sockets and multithreading for real-time communication.",
     "technologies": ["C++", "TCP/IP", "Multithreading"],
     "image": "./icons/chat.jpg",

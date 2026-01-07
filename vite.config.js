@@ -21,6 +21,10 @@ export default defineConfig({
   base: "/portfolio/",
   optimizeDeps: {
   include: ["react-responsive-carousel"],
+  exclude: [
+      "react-native-web",
+      "react-native-web/dist/apis/StyleSheet/registry",
+    ],
 }
 })
 

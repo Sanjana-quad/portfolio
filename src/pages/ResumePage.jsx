@@ -24,7 +24,7 @@ export default function ResumePage() {
           <FileText className="w-8 h-8 text-indigo-500" /> My Resume
         </h1>
         <p className="text-gray-600 dark:text-gray-400 mb-10">
-          A glimpse into my journey — experience, skills, and projects in one place.
+        Let's connect! experience, skills, and projects in one place.
         </p>
 
         {/* Resume Preview Frame */}
