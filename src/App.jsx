@@ -12,12 +12,14 @@ import AILearning from "./pages/AILearning";
 import Contact from "./pages/Contact";
 import ResumePage from "./pages/ResumePage";
 
+
 export default function App() {
   return (
     <Router basename="/portfolio">
-      <div className="min-h-screen flex flex-col bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
+      <div className="relative min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
+        
         <Navbar />
-        <main className="flex-1 container mx-auto px-4 py-8">
+        <main className="flex-1 px-4 py-8">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -31,7 +33,7 @@ export default function App() {
           </Routes>
         </main>
         <Footer />
-      </div>
+        </div>
     </Router>
   );
 }

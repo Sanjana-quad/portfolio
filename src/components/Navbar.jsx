@@ -32,9 +32,9 @@ export default function Navbar() {
             <NavLink to="/projects" className={linkClass}>Projects</NavLink>
             {/* <NavLink to="/about" className={linkClass}>About</NavLink> */}
             <NavLink to="/experience" className={linkClass}>Experience</NavLink>
-            <NavLink to="/skills" className={linkClass}>Skills</NavLink>
+            {/* <NavLink to="/skills" className={linkClass}>Skills</NavLink> */}
             <NavLink to="/certifications" className={linkClass}>Certifications</NavLink>
-            <NavLink to="/ailearning" className={linkClass}>Learning Progress</NavLink>
+            <NavLink to="/ailearning" className={linkClass}>Blog</NavLink>
             <NavLink to="/contact" className={linkClass}>Contact</NavLink>
           </nav>
 

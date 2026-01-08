@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import profileImg from "../assets/ss.jpg";
 import { ArrowDownCircle, Send } from "lucide-react";
-import AnimatedGridBackground from "../components/AnimatedGridBackground";
+
 
 
 export default function Hero() {
@@ -20,7 +20,6 @@ export default function Hero() {
   "
     >
 
-       <AnimatedGridBackground />
       {/* Background Glow */}
       <div className="absolute inset-0 -z-100">
         {/* Light glow tint */}

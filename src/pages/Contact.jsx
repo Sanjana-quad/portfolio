@@ -9,10 +9,27 @@ export default function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Thank you for reaching out! I’ll get back to you soon.");
-  };
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  try {
+    const res = await fetch("http://localhost:5000/send-email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (!res.ok) throw new Error("Failed to send");
+
+    alert("Message sent successfully!");
+    setFormData({ name: "", email: "", message: "" });
+  } catch (err) {
+    alert("Something went wrong. Please try again later.");
+  }
+};
+
 
   return (
     <section className="relative py-24 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950 overflow-hidden">
