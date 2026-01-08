@@ -153,6 +153,13 @@ export default function FeaturedProjects({ featured }) {
                 >
                   View on GitHub →
                 </a>
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  className="mt-5 inline-block text-sm text-indigo-500 hover:underline"
+                >
+                  View Demo →
+                </a>
               </motion.div>
             </SwiperSlide>
           ))}

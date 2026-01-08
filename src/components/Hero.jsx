@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import profileImg from "../assets/ss.jpg";
 import { ArrowDownCircle, Send } from "lucide-react";
-
+import { MagneticButton } from "@/components/ui/shadcn-io/magnetic-button";
 
 
 export default function Hero() {
@@ -84,19 +84,13 @@ export default function Hero() {
             <ArrowDownCircle size={18} />
             View My Work
           </a>
+
           <a
             href="/portfolio/contact"
-            className="
-          flex items-center gap-2 
-          border border-gray-300 dark:border-gray-600
-          px-5 py-2.5 rounded-full 
-          text-gray-700 dark:text-gray-300
-          hover:bg-orange-100 dark:hover:bg-white/10 
-          hover:scale-[1.03] transition-all duration-300
-        "
           >
-            <Send size={18} />
-            Let’s Connect
+            <MagneticButton />
+            {/* <Send size={18} /> */}
+            
           </a>
         </div>
       </motion.div>

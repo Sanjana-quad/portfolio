@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Linkedin, Github, MapPin } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -13,22 +14,24 @@ export default function Contact() {
   e.preventDefault();
 
   try {
-    const res = await fetch("http://localhost:5000/send-email", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
+    await emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
       },
-      body: JSON.stringify(formData),
-    });
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    );
 
-    if (!res.ok) throw new Error("Failed to send");
-
-    alert("Message sent successfully!");
+    alert("Thank you for reaching out! I’ll get back to you soon.");
     setFormData({ name: "", email: "", message: "" });
-  } catch (err) {
-    alert("Something went wrong. Please try again later.");
+  } catch (error) {
+    alert("Failed to send message. Please try again later.");
   }
 };
+
 
 
   return (

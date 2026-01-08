@@ -18,6 +18,11 @@ export default defineConfig({
       },
     },
   ],
+  resolve: {
+    alias: {
+      "@": resolve(__dirname, "./src"),
+    },
+  },
   base: "/portfolio/",
   optimizeDeps: {
   include: ["react-responsive-carousel"],
