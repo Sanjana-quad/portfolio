@@ -36,6 +36,7 @@ export default function Experience() {
   return (
     <section className="py-24 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950">
       <div className="max-w-6xl mx-auto px-6">
+        
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-gray-100">
             Experience

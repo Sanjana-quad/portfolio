@@ -32,7 +32,7 @@ export default function ResumePage() {
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2 }}
-          className="relative w-full max-w-6xl h-[85vh] bg-white/70 dark:bg-gray-800/60 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-2xl overflow-hidden backdrop-blur-xl"
+          className="relative w-[100vh] h-[65vh] bg-white/70 dark:bg-gray-800/60 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-2xl overflow-hidden backdrop-blur-xl"
         >
           <embed
             src={`${import.meta.env.BASE_URL}Sanjana_Resume.pdf`}

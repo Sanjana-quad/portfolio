@@ -4,6 +4,7 @@ import { SiLeetcode } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import useTheme from "../hooks/useTheme";
 import { FileText } from "lucide-react";
+import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
 
 
 export default function Navbar() {
@@ -15,19 +16,23 @@ export default function Navbar() {
 
   const linkClass = ({ isActive }) =>
     "px-3 py-2 rounded-md text-sm font-medium " +
-    (isActive ? "bg-gray-200 dark:bg-gray-700" : "hover:bg-gray-100 dark:hover:bg-gray-800");
+    (isActive ? "bg-gray-300 dark:bg-gray-700" : "hover:bg-gray-100 dark:hover:bg-gray-800");
 
   return (
-    <header className="bg-white dark:bg-gray-800 border-b dark:border-gray-700">
-      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-        <div className="hidden md:flex items-center gap-4">
-          <NavLink
+      
+    <header className="transparent fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/30 dark:bg-gray-600/30 border-b border-gray-200 dark:border-gray-700">
+     
+      <div className="container mx-auto px-2 py-1 flex items-center justify-between">
+       <NavLink
             to="/"
-            className="text-xl font-bold italic underline decoration-orange-400 dark:decoration-green-400 text-shadow-lg"
+            className="text-xl font-bold italic dark:text-cyan-300 text-gray-900 text-shadow-lg"
           >
-          Sanjana Satheesh †
+          SS †
           </NavLink>
-          <nav className="hidden md:flex items-center gap-1">
+        <div className="hidden md:flex items-center gap-4">
+          
+          
+          <nav className="hidden md:flex space-x-2">
             <NavLink to="/" className={linkClass}>Home</NavLink>
             <NavLink to="/projects" className={linkClass}>Projects</NavLink>
             {/* <NavLink to="/about" className={linkClass}>About</NavLink> */}
@@ -41,9 +46,8 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-3">
-          <button onClick={toggleTheme} className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700" title={theme === "dark" ? "Switch to dark mode" : "Switch to light mode"} >
-            {theme === "dark" ? <FiMoon size={18} /> : <FiSun size={18} />}
-          </button>
+          <AnimatedThemeToggler />
+            {/* {theme === "dark" ? <FiMoon size={18} /> : <FiSun size={18} />} */}
           <a href="https://www.linkedin.com/in/sanjana-satheesh-236233189/" target="_blank" rel="noopener noreferrer" className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700">
             <FaLinkedin size={18} /> </a>
           

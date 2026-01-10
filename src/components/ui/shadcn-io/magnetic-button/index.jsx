@@ -57,10 +57,10 @@ export const MagneticButton = React.forwardRef(function MagneticButton(
       ref={ref}
       className={cn(
         "min-w-40 relative touch-none",
-        "bg-violet-100 dark:bg-violet-900",
-        "hover:bg-violet-200 dark:hover:bg-violet-800",
-        "text-violet-600 dark:text-violet-300",
-        "border border-violet-300 dark:border-violet-700",
+        "bg-cyan-100 dark:bg-cyan-900",
+        "hover:bg-cyan-200 dark:hover:bg-cyan-800",
+        "text-brown-600 dark:text-brown-300",
+        "border border-cyan-300 dark:border-cyan-700",
         "transition-all duration-300 rounded-md px-4 py-2",
         className
       )}
@@ -81,7 +81,7 @@ export const MagneticButton = React.forwardRef(function MagneticButton(
           animate={particlesControl}
           className={cn(
             "absolute w-1.5 h-1.5 rounded-full pointer-events-none",
-            "bg-violet-400 dark:bg-violet-300",
+            "bg-cyan-400 dark:bg-cyan-300",
             "transition-opacity duration-300",
             isAttracting ? "opacity-100" : "opacity-40"
           )}

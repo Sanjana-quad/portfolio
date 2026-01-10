@@ -3,6 +3,7 @@ import profileImg from "../assets/ss.jpg";
 import { ArrowDownCircle, Send } from "lucide-react";
 import { MagneticButton } from "@/components/ui/shadcn-io/magnetic-button";
 
+import { BackgroundPaths } from "./ui/shadcn-io/background-paths";
 
 export default function Hero() {
   return (
@@ -13,27 +14,12 @@ export default function Hero() {
       className="
     relative flex flex-col md:flex-row items-center justify-center min-h-[90vh]
     px-6 md:px-16 overflow-hidden
-    bg-gradient-to-br 
-    from-orange-100 via-white to-yellow-50
-    dark:from-indigo-950 dark:via-purple-900 dark:to-blue-950
-    text-gray-900 dark:text-white
   "
     >
 
       {/* Background Glow */}
       <div className="absolute inset-0 -z-100">
-        {/* Light glow tint */}
-        <div className="
-      absolute top-1/2 left-1/2 w-[600px] h-[600px]
-      bg-orange-300/20 dark:bg-red-500/20 
-      rounded-full blur-[120px] translate-x-[-50%] translate-y-[-50%]
-    " />
-        {/* Secondary glow */}
-        <div className="
-      absolute bottom-0 right-0 w-[400px] h-[400px]
-      bg-yellow-300/20 dark:bg-cyan-600/20 
-      rounded-full blur-[120px]
-    " />
+        
       </div>
 
       {/* Left: Text Section */}
@@ -57,13 +43,7 @@ export default function Hero() {
           </span>
         </h1>
 
-        {/* <h2 className="
-      text-lg md:text-2xl 
-      text-gray-700 dark:text-gray-300
-      font-medium
-    ">
-          Building data-driven and AI-powered systems that learn, adapt, and deliver impact.
-        </h2> */}
+       
 
         <p className="text-gray-600 dark:text-gray-400 leading-relaxed max-w-xl mx-auto md:mx-0">
           Backend Engineer building APIs today, designing interfaces for tomorrow.
@@ -95,27 +75,7 @@ export default function Hero() {
         </div>
       </motion.div>
 
-      {/* Right: Profile Image */}
-      {/* <motion.div
-    initial={{ opacity: 0, scale: 0.9 }}
-    animate={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 1 }}
-    className="relative mt-10 md:mt-0"
-  >
-    <div className="
-      w-60 h-60 md:w-72 md:h-72 rounded-full overflow-hidden
-      border-4 border-orange-300 dark:border-purple-500
-      shadow-[0_0_25px_rgba(249,115,22,0.3)]
-      dark:shadow-[0_0_25px_rgba(168,85,247,0.6)]
-      hover:scale-105 transition-transform duration-500
-    ">
-      <img
-        src={profileImg}
-        alt="Sanjana Satheesh"
-        className="w-full h-full object-cover"
-      />
-    </div>
-  </motion.div> */}
+      
       <motion.div
         initial={{ opacity: .2, scale: 1 }}
         animate={{ opacity: 1, scale: 1.2 }}
@@ -141,8 +101,7 @@ export default function Hero() {
     shadow-sm
   ">
 
-          {/* Use a small icon like a network node or AI symbol */}
-          {/* <AiOutlineExperiment className="w-5 h-5 text-indigo-600 dark:text-teal-300" /> */}
+          
         </div>
       </motion.div>
     </motion.section>
