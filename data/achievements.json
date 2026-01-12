@@ -1,0 +1,68 @@
+{
+  "achievements": [
+    {
+      "title": "Flutter App Prototype Presentation",
+      "organization": "IEDC Centre, SJCET Palai",
+      "year": "2023",
+      "description": "Presented a Flutter-based app prototype emphasizing user-centric UI/UX and streamlined data flow for local problem-solving."
+    }
+  ],
+
+  "certifications": [
+    {
+      "title": "Oracle Cloud Infrastructure AI Foundations Associate",
+      "organization": "Oracle",
+      "year": "2024",
+      "image": "./icons/oci.jpeg",
+      "skills": ["OCI", "AI Services", "Responsible ML"],
+      "description": "Learned OCI’s AI and data services, focusing on building ethical and efficient AI workflows within the cloud ecosystem.",
+      "url":"https://catalog-education.oracle.com/ords/certview/sharebadge?id=0603256ECF4FA3815996FCF924E63C16493F1C9FAAD51341699EE2778CC74B4C"
+    },
+    {
+      "title": "Microsoft Azure Data Fundamentals DP-900 Exam Prep",
+      "organization": "Microsoft",
+      "year": "2025",
+      "image": "./icons/azure_data.png",
+      "skills": ["OCI", "AI Services", "Responsible ML"],
+      "description": "Learned OCI’s AI and data services, focusing on building ethical and efficient AI workflows within the cloud ecosystem.",
+      "url":"https://www.coursera.org/account/accomplishments/specialization/NODBNAMMCPU2?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=s12n"
+    },
+    {
+      "title": "Oracle AI Vector Search Certified Professional",
+      "organization": "Oracle",
+      "year": "2024",
+      "image": "./icons/oci.jpeg",
+      "skills": ["vector fundamentals", "Vector Embeddings", "Similarity Search"],
+      "description": "Learned OCI’s AI and data services, focusing on building ethical and efficient AI workflows within the cloud ecosystem.",
+      "url":"https://catalog-education.oracle.com/ords/certview/sharebadge?id=0603256ECF4FA3815996FCF924E63C16493F1C9FAAD51341699EE2778CC74B4C"
+    },
+    {
+      "title": "Vector Institute Embedded Systems Training",
+      "organization": "Vector Institute",
+      "year": "2023",
+      "image": "./icons/vector.png",
+      "skills": ["C", "C++", "ARM7", "Linux Systems"],
+      "description": "Hands-on embedded systems training covering low-level memory control, system interfacing, and hardware debugging.",
+      "url": "https://drive.google.com/file/d/1r266WwY2gnMk54pLIZffG84ZcRicDxlz/view?usp=drive_link"
+    },
+    {
+      "title": "IBM Software Engineering Essentials",
+      "organization": "IBM",
+      "year": "2024",
+      "image": "./icons/ibm2.png",
+      "skills": ["Agile", "Version Control", "Software Architecture"],
+      "description": "Studied scalable system design and agile software engineering principles for practical development workflows.",
+      "url":"https://www.credly.com/badges/46434a6f-63bd-4541-a44a-c528f712881d/public_url"
+    },
+    {
+      "title": "IBM AI Developer Professional Certificate",
+      "organization": "IBM",
+      "year": "In Progress (9/10 Courses Completed)",
+      "image": "./icons/ibm.png",
+      "skills": ["AI Development", "Machine Learning", "Model Deployment"],
+      "description": "Exploring the end-to-end lifecycle of AI — from design to scalable deployment with best practices for production-ready models.",
+      "url": "https://www.coursera.org/account/accomplishments/verify/CUUIK4QGXZ51"
+    }
+  ]
+}
+
